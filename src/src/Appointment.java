@@ -1,21 +1,22 @@
+import java.io.*;
 import java.time.LocalDateTime;
 
-public class Appointment {
-    private String type;
+public class Appointment implements Serializable {
+    private String appType;
     private LocalDateTime dateTime;
     private String notes;
 
     public Appointment(String appType, LocalDateTime dateTime, String notes) {
-        this.type = appType;
+        this.appType = appType;
         this.dateTime = dateTime;
         this.notes = notes;
     }
 
     public String getAppType() {
-        return type;
+        return appType;
     }
     public void setAppType(String appType) {
-        this.type = appType;
+        this.appType = appType;
     }
     public LocalDateTime getDateTime() {
         return dateTime;
@@ -31,7 +32,7 @@ public class Appointment {
     }
     public String toString() {
         return "Appointment{" +
-                "type='" + type + '\'' +
+                "type='" + appType + '\'' +
                 ", dateTime=" + dateTime +
                 ", notes='" + notes + '\'' +
                 '}';
