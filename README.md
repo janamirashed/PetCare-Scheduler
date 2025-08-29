@@ -64,7 +64,6 @@ petcare-scheduler/
 
 - Add GUI interface for better usability  
 - Export reports to CSV or JSON  
-- Send notifications/reminders for upcoming appointments  
 - Allow editing or deleting pets/appointments  
 - Support multiple owners per pet  
 - Implement unit tests for better code reliability  
