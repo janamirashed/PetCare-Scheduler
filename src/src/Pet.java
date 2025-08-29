@@ -67,6 +67,9 @@ public class Pet {
     public List<Appointment> getAppointments() {
         return appointments;
     }
+    public void  setAppointments(List<Appointment> appointments) {
+        this.appointments = appointments;
+    }
     public void addAppointment(Appointment appointment) {
         this.appointments.add(appointment);
     }
